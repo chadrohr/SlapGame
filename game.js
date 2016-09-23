@@ -10,6 +10,8 @@ function onSlap(){
 }
 function onKick(){
     health -= kick
+    update()
+    return health
 }
 
 function onPunch(){
