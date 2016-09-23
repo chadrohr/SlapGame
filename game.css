@@ -1,6 +1,6 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
 body{
-  background: url(http://www.colxi.info/wp-content/uploads/2012/11/Lb2villageoftwilightbg.gif) center center;
+  background: url(https://i.ytimg.com/vi/UF8zJoRLrSI/maxresdefault.jpg) center center;
   background-size: cover;
 }
 
@@ -34,5 +34,5 @@ h1{
   position: absolute;
   bottom: 20px;
   left: 48%;
-  height: 130px;
+  height: 200px;
 }
