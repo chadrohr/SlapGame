@@ -68,9 +68,9 @@ a certain threshold. We will need to use a conditional statement to determine th
 1. inside the update() function add an if statement
 ```javascript
 	if("[PlayerHealth]" <= 0){
-		 document.getElementById("player-panel").classList.add("panel-danger")
+		 document.getElementById("player-panel").className.add("panel-danger")
 	}else{
-		 document.getElementById("player-panel").classList.remove("panel-danger")
+		 document.getElementById("player-panel").className.remove("panel-danger")
 	}
 ``` 
 1. When the player's health drops below zero, the panel should turn red.
