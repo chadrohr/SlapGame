@@ -5,7 +5,6 @@
 
 //var Players = {}
 function Players(name, health, slap, punch, kick, block){
-    debugger
     this.name = name;
     this.health = health;
     this.slap = slap;
@@ -27,41 +26,60 @@ var player1 = new Players('Black Knight', 100, 1, 3, 5, 5);
 // }
 
 function onSlap(){
-  Players.health -= Players.slap
+  function play(){
+       var audio = document.getElementById("audio2");
+       audio.play();
+                 }
+  player1.health -= player1.slap
+  play()
   update()
   return health
 }
 function onPunch(){
-  Players.health -= Players.punch
+  player1.health -= player1.punch
   update()
   return health
 }
 function onKick(){
-    Players.health -= Players.kick
+    player1.health -= player1.kick
   update()
   return health
 }
 function onBlock(){
-    Players.health += Players.block
+    function play(){
+        var audio = document.getElementById("audio3");
+        audio.play();
+                 }
+    player1.health += player1.block
+  play()
   update()
   return health
 }
+
 function onReset(){
-    Players.health = 100
+    player1.health = 100
     document.getElementById('health').style.color= "white";
+    function play(){
+       var audio = document.getElementById("audio1");
+       audio.play();
+                 }
     update()
+    play()
     return health;
 }
 function update(){
  var healthElem = document.getElementById('health');
   { 
-    if(health <= 20){
+    if(player1.health <= 20){
     document.getElementById('health').style.color= "red";  
       }
-      if(health <= 0 ){
-     health = 0
+     if(player1.health > 20){
+    document.getElementById('health').style.color= "white";  
+      } 
+      if(player1.health <= 0 ){
+     player1.health = 0
  } 
-    healthElem.innerHTML = health;
+    healthElem.innerHTML = "Player 1's Health " + player1.health;
 }
 }
 

@@ -6,6 +6,10 @@
 	
 </head>
 <body>
+<audio id="audio1" src="http://www.intriguing.com/mp/_sounds/hg/notdead.wav" ></audio>
+<audio id="audio2" src="http://www.intriguing.com/mp/_sounds/hg/ni.wav" ></audio>
+<audio id="audio3" src="http://www.intriguing.com/mp/_sounds/hg/bleed.wav" ></audio>
+<audio id="audio4" src="" ></audio>
 <div class="container-fluid">
   <div class="row">
     <div class="attack col-md-6 left-justified">
@@ -21,19 +25,25 @@
     <div class="block col-md-6 right justified">
       <div class="stage">
         <div class="player">
-          <button onclick="onBlock()">Block</button> 
+          <button onclick="onBlock()">Repair a Flesh Wound</button> 
+          <button onclick="onSpecial()">Use A Shield</button>
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="score col-md-6">
+    <div class="score col-md-12">
       <div>
-        <h1 id="health">100</h1>
+        <h1 id="health">Players Health 100</h1>
       </div>
    </div>
-    <div class="col-md-6 dummy">
-        <img class="img-responsive" src="http://vignette4.wikia.nocookie.net/pawnstarsthegame/images/5/5d/Black_Knight.png/revision/latest?cb=20111214173913" height = "300"></img>
+    <div class="dummy-left col-md-6 dummy">
+        <img  src="http://vignette4.wikia.nocookie.net/pawnstarsthegame/images/5/5d/Black_Knight.png/revision/latest?cb=20111214173913"></img>
+        
+    </div>
+    <div class="dummy-right col-md-6 dummy">
+        
+        <img  src="http://vignette3.wikia.nocookie.net/2007scape/images/4/40/King_Arthur.png/revision/latest?cb=20151013012433"></img>
     </div>
 </div>
 </div>	

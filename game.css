@@ -10,6 +10,7 @@ body{
   justify-content: space-around;
 }
 .player{
+  margin-top: 20px;
   display: flex;
   height: 80px;
 }
@@ -25,21 +26,27 @@ img.invert {
 
 h1{
   color: #fff;
-  margin: 20px;
-  padding: 35px;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
 }
-
-.dummy{
- 
+.dummy-left{
   position: absolute;
-  bottom: 15px;
-  left: 25%;
+  left: 30%;
   height: 300px;
+  bottom:5px;
+}
+.dummy-right{
+  position: absolute;
+  right: 1%;
+  height: 250px;
+  bottom: 50px;
+  margin-bottom: 35px;
 }
 .onReset {
   http://www.intriguing.com/mp/_sounds/hg/notdead.wav
   http://www.intriguing.com/mp/_sounds/hg/knight.wav
   http://www.intriguing.com/mp/_sounds/hg/ni.wav
   http://www.intriguing.com/mp/_sounds/hg/bleed.wav
+  http://vignette3.wikia.nocookie.net/2007scape/images/4/40/King_Arthur.png/revision/latest?cb=20151013012433
 }
