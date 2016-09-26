@@ -1,22 +1,19 @@
-var health = 100;
-var slap = 1;
-var punch = 5;
-var kick = 10;
+//  var health = 100;
+// var slap = 1;
+// var punch = 5;
+// var kick = 10;
 
-//var players = {}
-// function Players(name, health, slap, punch, kick){
-//     this.name = name;
-//     this.health = health;
-//     this.slap = slap;
-//     this.punch = punch;
-//     this.kick = kick;
-//     this.draw = function(){
-
-//     }
-// }
-// var Players = {
-//     Player1: new 
-// }
+//var Players = {}
+function Players(name, health, slap, punch, kick, block){
+    debugger
+    this.name = name;
+    this.health = health;
+    this.slap = slap;
+    this.punch = punch;
+    this.kick = kick;
+    this.block = block; 
+}
+var player1 = new Players('Black Knight', 100, 1, 3, 5, 5);
 // function Items(name, modifier, description){
 //     this.name = name;
 //     this.modifier = modifier;
@@ -30,25 +27,30 @@ var kick = 10;
 // }
 
 function onSlap(){
-  health -= slap
+  Players.health -= Players.slap
   update()
   return health
 }
 function onPunch(){
-  health -= punch
+  Players.health -= Players.punch
   update()
   return health
 }
 function onKick(){
-    health -= kick
-    update()
-    return health
+    Players.health -= Players.kick
+  update()
+  return health
+}
+function onBlock(){
+    Players.health += Players.block
+  update()
+  return health
 }
 function onReset(){
-    health = 100
+    Players.health = 100
     document.getElementById('health').style.color= "white";
     update()
-    return health
+    return health;
 }
 function update(){
  var healthElem = document.getElementById('health');

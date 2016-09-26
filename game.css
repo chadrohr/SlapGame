@@ -1,6 +1,6 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
 body{
-  background: url(https://i.ytimg.com/vi/UF8zJoRLrSI/maxresdefault.jpg) center center;
+  background: url(https://twistedsifter.files.wordpress.com/2013/05/animated-gifs-of-fighting-game-backgrounds-37.gif?w=1536&h=736) center center;
   background-size: cover;
 }
 
@@ -11,6 +11,7 @@ body{
 }
 .player{
   display: flex;
+  height: 80px;
 }
 
 img.invert {
@@ -30,9 +31,15 @@ h1{
 }
 
 .dummy{
-  background: url(http://network.mugenguild.com/guild/stances/ss1_bonus.gif) no-repeat;
+ 
   position: absolute;
-  bottom: 20px;
-  left: 48%;
-  height: 200px;
+  bottom: 15px;
+  left: 25%;
+  height: 300px;
+}
+.onReset {
+  http://www.intriguing.com/mp/_sounds/hg/notdead.wav
+  http://www.intriguing.com/mp/_sounds/hg/knight.wav
+  http://www.intriguing.com/mp/_sounds/hg/ni.wav
+  http://www.intriguing.com/mp/_sounds/hg/bleed.wav
 }
